@@ -1,0 +1,431 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    color: rgb(27, 27, 32);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 5.6rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+#blackoutCover {
+    background-color: rgba(0, 0, 0, 0.164);
+    backdrop-filter: blur(3px);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+#infoBox {
+    font-size: 1.8rem;
+    width: 60vw;
+    height: 80Vh;
+    background-color: rgba(56, 55, 63, 0.847);
+    z-index: 1;
+    box-shadow: 0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.336);
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 0.5rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: rgba(221, 231, 241, 0.5);
+    border-bottom: 0.1rem solid rgb(183, 193, 202);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.intro {
+    margin-top: 10rem;
+}
+
+.logo {
+    background-image: url('../img/logo-lightmode.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5em;
+    width: 100%;
+    margin-left: 1em;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.menuIcon {
+
+    border: 0.1em solid rgb(67, 64, 80);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 3.5em;
+    height: 3.5em;
+    padding: 0.3em;
+    margin: 0.3em;
+    border-radius: 0.5em;
+
+}
+
+.menuBar {
+    width: 2.3em;
+    height: 0.5em;
+    background-color: rgb(67, 64, 80);
+    border-radius: 1em;
+}
+
+.menuIcon:hover .menuBar {
+    background-color: aliceblue;
+}
+
+.menuIcon:hover {
+    border: 0.1em solid aliceblue;
+}
+
+nav ul {
+    background-color: rgba(221, 231, 241, 0.5);
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    list-style: none;
+}
+
+nav a {
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: rgb(10, 10, 10);
+    text-decoration: underline;
+}
+
+.currentPageListItem a {
+    color: rgb(10, 10, 10);
+    text-decoration: underline;
+}
+
+nav li {
+
+    font-size: 2em;
+    padding: 0.5em 0;
+    text-align: center;
+
+}
+
+nav li:last-child {
+    border: 0;
+}
+
+.nav-desktop {
+    display: none;
+}
+
+section {
+    max-width: 40rem;
+    margin: 3rem auto 6rem auto;
+}
+
+.card-box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 30rem;
+    margin: 2rem;
+    cursor: pointer;
+
+
+}
+
+#webGrooveboxThumb {
+    background-image: url('../img/GrooveboxSynthSmall.png');
+
+}
+
+#ekholmsnasThumb {
+    background-image: url('../img/ekholmsnasbacken1Small.png');
+}
+
+#tinyGrandPrixThumb {
+    background-image: url('../img/TinyGrandPrixGameshot2Small.png');
+}
+
+.button {
+    background-color: rgb(218, 238, 255);
+    font-size: 2rem;
+    color: rgb(27, 27, 32);
+    border: 1px solid rgb(73, 73, 73);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    margin: 3rem 0;
+}
+
+.button:hover {
+
+    background-color: rgb(96, 96, 118);
+    color: rgb(218, 238, 255);
+
+}
+
+.tech-grid {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.tech-grid a {
+
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.tech-logo {
+    object-fit: cover;
+    max-width: 75%;
+    max-height: 75%;
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+    nav li {
+        border-bottom: 0.1rem solid rgb(183, 193, 202);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    /*   nav li:last-child {
+        border: 0;
+    } */
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .tech-logo {
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .tech-logo:hover {
+        transform: scale(1.2);
+
+    }
+
+    .card-box {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+
+    }
+
+    .nav-mobile {}
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        margin: auto;
+    }
+
+    nav li {
+        margin-left: 1.5rem;
+    }
+
+    section {
+        width: 80%;
+        max-width: 960px;
+        margin: 3rem auto 12rem auto;
+    }
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .tech-logo {
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: flex;
+        margin-right: 1rem;
+        min-width: fit-content;
+        background: none;
+    }
+
+    .nav-desktop ul {
+        background: none;
+    }
+
+    .menuIcon {
+        display: none;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: rgb(30, 29, 34);
+        color: aliceblue;
+    }
+
+    .logo {
+        background-image: url('../img/logo-darkmode.svg');
+    }
+
+    header {
+        background-color: rgba(56, 55, 63, 0.847);
+        backdrop-filter: blur(5px);
+        border-bottom: 0.1rem solid rgb(183, 193, 202);
+    }
+
+    .menuIcon {
+        background-color: rgb(67, 64, 80);
+        border: 0.1em solid rgb(183, 193, 202);
+    }
+
+    .menuBar {
+        background-color: rgb(182, 201, 218);
+    }
+
+    .menuIcon:hover .menuBar {
+        background-color: aliceblue;
+    }
+
+    .menuIcon:hover {
+        border: 0.1em solid aliceblue;
+    }
+
+    nav a {
+        color: rgb(182, 201, 218);
+    }
+
+    nav a:hover,
+    nav a:focus {
+        color: aliceblue;
+    }
+
+    .currentPageListItem a {
+        color: aliceblue;
+    }
+
+    nav ul {
+        background-color: rgb(67, 64, 80);
+    }
+
+    .card {
+
+        border: 1px solid aliceblue;
+    }
+
+    .button {
+        background-color: rgb(40, 40, 62);
+        color: rgb(218, 238, 255);
+        border: 1px solid rgb(218, 238, 255);
+        padding: 2rem;
+        text-align: center;
+        border-radius: 2rem;
+    }
+
+    .button:hover {
+
+        background-color: rgb(218, 238, 255);
+        color: rgb(40, 40, 62);
+
+    }
+}
+
+.menu-hidden {
+
+    display: none;
+}
