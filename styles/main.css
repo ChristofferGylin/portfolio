@@ -72,6 +72,11 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 5rem;
 }
 
 .intro {
@@ -139,6 +144,7 @@ nav ul {
 nav a {
     color: rgb(73, 73, 73);
     text-decoration: none;
+    text-underline-offset: 0.7rem;
 }
 
 nav a:hover,
@@ -166,6 +172,14 @@ nav li:last-child {
 
 .nav-desktop {
     display: none;
+}
+
+.nav-mobile {
+
+    position: fixed;
+    top: 5.1rem;
+    left: 0;
+    width: 100%;
 }
 
 section {
@@ -295,8 +309,6 @@ section {
 
     }
 
-    .nav-mobile {}
-
     nav ul {
         flex-direction: row;
         justify-content: center;
@@ -319,12 +331,7 @@ section {
 
 @media screen and (min-width: 900px) {
 
-    header {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-    }
+
 
     .tech-logo {
         max-width: 40%;
@@ -333,6 +340,7 @@ section {
 
     .nav-mobile {
         display: none;
+
     }
 
     .nav-desktop {
@@ -400,7 +408,9 @@ section {
     }
 
     nav ul {
-        background-color: rgb(67, 64, 80);
+
+        background-color: rgba(56, 55, 63, 0.847);
+        backdrop-filter: blur(5px);
     }
 
     .card {
