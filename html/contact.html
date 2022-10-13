@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Christoffer Gylin</title>
+</head>
+<body>
+    <header><div class="logo"></div>
+        <nav class="nav-desktop">
+            <ul>
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="./about.html">Om Mig</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./cv.html">CV</a></li>
+                <li class="currentPageListItem"><a href="./contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="menuIcon" id="menuIcon">
+        <div class="menuBar" id="menuBar1"></div>
+        <div class="menuBar" id="menuBar2"></div>
+        <div class="menuBar" id="menuBar3"></div>
+    </div></header>
+    <nav class="nav-mobile menu-hidden" id="navMobile">
+        <ul>
+            <li><a href="../index.html">Hem</a></li>
+            <li><a href="./about.html">Om Mig</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./cv.html">CV</a></li>
+            <li class="currentPageListItem"><a href="./contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="intro">
+            <p>Finns det något jag kan göra för dig?</p>
+            <h1>Skicka mig ett meddelande</h1>
+        </section>
+        <section>
+            <textarea cols="30" rows="10" id="formMessage" name="formMessage" form="contactForm"></textarea>
+            <form action="" id="contactForm">
+                
+                <input type="text" id="formName" name="formName" placeholder="Namn">
+                <input type="text" id="formEmail" name="formEmail" placeholder="E-mail">
+                
+                <input type="submit" name="formSubmit" id="formSubmit">
+            </form>
+        </section>
+        
+    </main>
+
+    <script type="module" src="../js/index.js"></script>
+</body>
+</html>
