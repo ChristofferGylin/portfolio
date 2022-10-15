@@ -79,63 +79,6 @@ li ul {
     visibility: hidden;
 }
 
-.info-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: scroll;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-}
-
-#infoBox {
-    display: grid;
-    grid-template-rows: 50vh 30vh;
-    font-size: 1.8rem;
-    min-height: 550px;
-    width: 60vw;
-    height: 80Vh;
-    background-color: rgba(56, 55, 63, 0.936);
-    z-index: 1;
-    box-shadow: 0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.336);
-
-    border-radius: 0.5rem;
-
-
-}
-
-
-.infoBoxInfo {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-#infoBoxScreenshots {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(3, 15vw);
-    height: 100%;
-    width: 100%;
-
-}
-
-.infoBoxThumb {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid rgb(73, 73, 73);
-    border-radius: 0.5rem;
-    box-shadow: 0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.336);
-    width: 100%;
-    height: 14rem;
-    margin: 2rem;
-    cursor: pointer;
-}
-
 .popup {
     background-color: rgba(221, 231, 241, 0.936);
     border: 0.1rem solid rgb(183, 193, 202);

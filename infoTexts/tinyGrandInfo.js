@@ -5,8 +5,8 @@ export const tinyGrandInfo = {
     links: [{ title: 'Live Länk', link: 'https://tinygrandprix.herokuapp.com/' },
     { title: 'GitHub', link: 'https://www.example.com' }],
     screenshots: [
-        { thumb: '/img/TinyGrandPrixStartScreenSmall.png', large: '/img/TinyGrandPrixStartScreen.png' },
-        { thumb: '/img/TinyGrandPrixGameshot1Small.png', large: '/img/TinyGrandPrixGameshot1.png' },
-        { thumb: '/img/TinyGrandPrixSelectCarSmall.png', large: '/img/TinyGrandPrixSelectCar.png' }
+        { thumb: './img/TinyGrandPrixStartScreenSmall.png', large: './img/TinyGrandPrixStartScreen.png' },
+        { thumb: './img/TinyGrandPrixGameshot1Small.png', large: './img/TinyGrandPrixGameshot1.png' },
+        { thumb: './img/TinyGrandPrixSelectCarSmall.png', large: './img/TinyGrandPrixSelectCar.png' }
     ]
 }

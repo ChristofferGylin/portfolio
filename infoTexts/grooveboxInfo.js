@@ -5,8 +5,8 @@ export const grooveboxInfo = {
     links: [{ title: 'Live Länk', link: 'https://christoffergylin.com/groovebox' },
     { title: 'GitHub', link: 'https://www.example.com' }],
     screenshots: [
-        { thumb: '/img/GrooveboxDrumMachineSmall.png', large: '/img/GrooveboxDrumMachine.png' },
-        { thumb: '/img/GrooveboxSynthSmall.png', large: '/img/GrooveboxSynth.png' },
-        { thumb: '/img/GrooveboxMixerSmall.png', large: '/img/GrooveboxMixer.png' }
+        { thumb: './img/GrooveboxDrumMachineSmall.png', large: './img/GrooveboxDrumMachine.png' },
+        { thumb: './img/GrooveboxSynthSmall.png', large: './img/GrooveboxSynth.png' },
+        { thumb: './img/GrooveboxMixerSmall.png', large: './img/GrooveboxMixer.png' }
     ]
 }
