@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.1rem;
+    color: rgb(36, 36, 86);
+}
+
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
@@ -10,24 +17,42 @@ body {
     padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4 {
+
+    margin-bottom: 2rem;
+
+}
+
 h1 {
     font-size: 5.6rem;
+    color: rgb(11, 8, 76);
 }
 
 h2 {
     font-size: 3.6rem;
+    color: rgb(70, 67, 108);
 }
 
 h3 {
     font-size: 3rem;
+    color: rgb(70, 67, 108);
 }
 
 h4 {
     font-size: 1.9rem;
+    color: rgb(70, 67, 108);
 }
 
 p {
     font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+
+
 }
 
 li {
@@ -58,6 +83,7 @@ li ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -67,15 +93,114 @@ li ul {
 }
 
 #infoBox {
+    display: grid;
+    grid-template-rows: 50vh 30vh;
     font-size: 1.8rem;
+    min-height: 550px;
     width: 60vw;
     height: 80Vh;
-    background-color: rgba(56, 55, 63, 0.847);
+    background-color: rgba(56, 55, 63, 0.936);
     z-index: 1;
+    box-shadow: 0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.336);
+
+    border-radius: 0.5rem;
+
+
+}
+
+
+.infoBoxInfo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#infoBoxScreenshots {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 15vw);
+    height: 100%;
+    width: 100%;
+
+}
+
+.infoBoxThumb {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.336);
+    width: 100%;
+    height: 14rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.popup {
+    background-color: rgba(221, 231, 241, 0.936);
+    border: 0.1rem solid rgb(183, 193, 202);
+    border-radius: 0.5rem;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50vh;
+    left: 50vw;
+    width: 80vw;
+    height: 80vh;
+    overflow: auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: auto auto;
+    padding: 2rem;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.popup-text {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.popup-sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.popup-screenshots {
+    border-top: 0.1rem solid rgb(183, 193, 202);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    min-height: 10rem;
+    padding-top: 2rem;
+}
+
+.popup-screenshot-thumb {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.336);
     border: 1px solid rgb(73, 73, 73);
     border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
 
+    cursor: pointer;
+}
+
+.popup li {
+    margin-left: 1.6rem;
+}
+
+.popup ul {
+    margin-bottom: 2rem;
+}
+
+
+.popup h4 {
+    margin-top: 1.1rem;
 }
 
 a {
@@ -83,7 +208,8 @@ a {
 }
 
 header {
-    background-color: rgba(221, 231, 241, 0.5);
+    background-color: rgba(221, 231, 241, 0.847);
+    backdrop-filter: blur(5px);
     border-bottom: 0.1rem solid rgb(183, 193, 202);
     display: flex;
     justify-content: space-between;
@@ -159,19 +285,19 @@ nav ul {
 }
 
 nav a {
-    color: rgb(73, 73, 73);
+    color: rgb(96, 96, 134);
     text-decoration: none;
     text-underline-offset: 0.7rem;
 }
 
 nav a:hover,
 nav a:focus {
-    color: rgb(10, 10, 10);
+    color: rgb(36, 36, 86);
     text-decoration: underline;
 }
 
 .currentPageListItem a {
-    color: rgb(10, 10, 10);
+    color: rgb(36, 36, 86);
     text-decoration: underline;
 }
 
@@ -197,7 +323,7 @@ nav li:last-child {
     top: 5.1rem;
     left: 0;
     width: 100%;
-    background-color: rgba(56, 55, 63, 0.847);
+    background-color: rgba(221, 231, 241, 0.847);
     backdrop-filter: blur(5px);
 }
 
@@ -218,7 +344,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    box-shadow: 0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.336);
     border: 1px solid rgb(73, 73, 73);
     border-radius: 0.5rem;
     width: 100%;
@@ -248,7 +374,7 @@ section {
     width: 100%;
     background-color: rgb(218, 238, 255);
     font-size: 2rem;
-    color: rgb(27, 27, 32);
+    color: rgb(70, 67, 108);
     border: 1px solid rgb(73, 73, 73);
     padding: 2rem;
     text-align: center;
@@ -260,7 +386,7 @@ section {
 .button:hover,
 #formSubmit:hover {
 
-    background-color: rgb(96, 96, 118);
+    background-color: rgb(70, 67, 108);
     color: rgb(218, 238, 255);
 
 }
@@ -288,6 +414,7 @@ section {
     object-fit: cover;
     max-width: 75%;
     max-height: 75%;
+
 }
 
 #formMessage {
@@ -322,10 +449,6 @@ section {
         align-items: center;
         width: 100%;
     }
-
-    /*   nav li:last-child {
-        border: 0;
-    } */
 
 }
 
@@ -368,7 +491,32 @@ section {
     section {
         width: 80%;
         max-width: 960px;
-        margin: 3rem auto 12rem auto;
+        margin: 3rem auto 6rem auto;
+    }
+
+    .popup-sidebar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .popup-text {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .popup-screenshots {
+        border-top: 0.1rem solid rgb(183, 193, 202);
+        grid-template-columns: repeat(3, 1fr);
+        min-height: 10rem;
+        padding-top: 2rem;
+    }
+
+    .popup aside {
+        border-left: 0.1rem solid rgb(183, 193, 202);
+        padding-left: 2rem;
     }
 
 }
@@ -406,6 +554,24 @@ section {
 }
 
 @media (prefers-color-scheme: dark) {
+
+    * {
+        color: aliceblue;
+    }
+
+    h1 {
+
+        color: rgb(157, 198, 233);
+    }
+
+    h2,
+    h3,
+    h4 {
+
+        color: rgb(173, 197, 218);
+    }
+
+
 
     body {
         background-color: rgb(30, 29, 34);
@@ -473,6 +639,11 @@ section {
         background-color: rgb(218, 238, 255);
         color: rgb(40, 40, 62);
 
+    }
+
+    .popup {
+        background-color: rgba(56, 55, 63, 0.936);
+        border: 0.1rem solid rgb(183, 193, 202);
     }
 }
 
