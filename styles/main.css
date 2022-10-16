@@ -165,24 +165,85 @@ header {
     height: 5rem;
 }
 
+footer {
+    background-color: rgba(221, 231, 241, 0.847);
+    backdrop-filter: blur(5px);
+    border-top: 0.1rem solid rgb(183, 193, 202);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 5rem;
+}
+
+.copyright {
+    color: rgb(36, 36, 86);
+    margin-right: 2rem;
+    font-size: 1.6rem;
+}
+
+.footer-links {
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+
+}
+
+.linkedin-logo,
+.github-logo,
+.email-logo {
+    fill: rgb(96, 96, 134);
+
+}
+
+.linkedin-logo:hover,
+.github-logo:hover,
+.email-logo:hover {
+    fill: rgb(36, 36, 86);
+
+
+}
+
+.linkedin-link {
+    background-image: url('../img/LinkedInLogo.png');
+    height: 3.2rem;
+    width: 3.75rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 0.5rem;
+}
+
+.github-link {
+    background-image: url('../img/GitHubLogoDark.png');
+    background-repeat: no-repeat;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-size: contain;
+    margin: 0 0.5rem;
+}
+
+.footer-email {
+    background-image: url('../img/email-link-black.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 3.2rem;
+    width: 3.2rem;
+    font-size: 3.2rem;
+    margin: 0 0.5rem;
+}
+
 .intro {
     margin-top: 10rem;
 }
 
-.logo {
-    background-image: url('../img/logo-lightmode.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 3.5em;
-    width: 100%;
-    margin-left: 1em;
-}
-
-.logo img {
-    height: 100%;
+.christoffer-gylin-logo {
+    height: 3.5rem;
+    margin-left: 2rem;
+    stroke: rgb(36, 36, 86);
+    fill: rgb(36, 36, 86);
 }
 
 .menuIcon {
@@ -508,7 +569,7 @@ section {
 
     .nav-desktop {
         display: flex;
-        margin-right: 1rem;
+        margin-right: 2rem;
         min-width: fit-content;
         background: none;
     }
@@ -548,14 +609,21 @@ section {
         color: aliceblue;
     }
 
-    .logo {
-        background-image: url('../img/logo-darkmode.svg');
-    }
-
     header {
         background-color: rgba(56, 55, 63, 0.847);
         backdrop-filter: blur(5px);
         border-bottom: 0.1rem solid rgb(183, 193, 202);
+    }
+
+    footer {
+        color: rgb(70, 67, 108);
+        background-color: rgba(56, 55, 63, 0.847);
+        backdrop-filter: blur(5px);
+        border-top: 0.1rem solid rgb(183, 193, 202);
+    }
+
+    .copyright {
+        color: rgb(173, 197, 218);
     }
 
     .menuIcon {
@@ -575,6 +643,23 @@ section {
         border: 0.1em solid aliceblue;
     }
 
+    .christoffer-gylin-logo {
+        stroke: aliceblue;
+        fill: aliceblue;
+    }
+
+    .linkedin-logo,
+    .github-logo,
+    .email-logo {
+        fill: rgb(182, 201, 218);
+    }
+
+    .linkedin-logo:hover,
+    .github-logo:hover,
+    .email-logo:hover {
+        fill: aliceblue;
+    }
+
     nav a {
         color: rgb(182, 201, 218);
     }
@@ -583,6 +668,15 @@ section {
     nav a:focus {
         color: aliceblue;
     }
+
+    .nav-mobile {
+
+
+        background-color: rgba(56, 55, 63, 0.847);
+        ;
+
+    }
+
 
     .currentPageListItem a {
         color: aliceblue;
