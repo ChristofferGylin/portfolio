@@ -2,7 +2,7 @@ import { grooveboxInfo } from "../infoTexts/grooveboxInfo.js";
 import { ekholmsnasInfo } from '../infoTexts/ekholmsnasInfo.js';
 import { tinyGrandInfo } from "../infoTexts/tinyGrandInfo.js";
 
-export const clickCard = (e, portfolioPage) => {
+export const clickCard = (e) => {
 
     e.target.style.transform = 'none';
     document.getElementById('popup').style.visibility = 'visible';
@@ -50,11 +50,8 @@ export const clickCard = (e, portfolioPage) => {
     let screenshots = ``;
 
     info.screenshots.forEach(screenshot => {
-        let extraPunctuation = ``;
-        if (portfolioPage) {
-            extraPunctuation = `.`;
-        }
-        const item = `<div class="popup-screenshot-thumb" style="background-image: url(${extraPunctuation}${screenshot.thumb})"></div>`;
+
+        const item = `<div class="popup-screenshot-thumb" style="background-image: url(.${screenshot.thumb})"></div>`;
         screenshots += item;
     });
 
