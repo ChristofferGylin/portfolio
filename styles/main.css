@@ -64,6 +64,11 @@ li ul {
     margin-top: 1rem;
 }
 
+.form-field {
+    color: rgb(27, 27, 32);
+    padding: 0.5rem;
+}
+
 .bold-text {
     font-weight: bold;
 }
