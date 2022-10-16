@@ -51,8 +51,6 @@ p {
     margin-bottom: 1.6rem;
     line-height: 1.3;
     margin-bottom: 2rem;
-
-
 }
 
 li {
@@ -97,7 +95,7 @@ li ul {
     overflow: auto;
     display: grid;
     gap: 2rem;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     padding: 2rem;
     visibility: hidden;
     z-index: 1;
@@ -108,12 +106,14 @@ li ul {
     gap: 2rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+
 }
 
 .popup-sidebar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+
 }
 
 .popup-screenshots {
@@ -150,6 +150,39 @@ li ul {
 .popup h4 {
     margin-top: 1.1rem;
 }
+
+.popup-close-container {
+    display: flex;
+    justify-content: end;
+}
+
+.popup-close-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 1rem;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgb(96, 96, 134);
+    border-radius: 0.3rem;
+}
+
+.popup-close-icon:hover {
+    border: 1px solid rgb(36, 36, 86);
+}
+
+.close-icon-svg {
+    stroke: rgb(96, 96, 134);
+    stroke-width: 1.5rem;
+}
+
+.close-icon-svg:hover {
+    stroke: rgb(36, 36, 86);
+}
+
+
 
 a {
     text-decoration: none;
@@ -209,7 +242,6 @@ footer {
 .email-logo:hover {
     fill: rgb(36, 36, 86);
 
-
 }
 
 .linkedin-link {
@@ -251,9 +283,21 @@ footer {
     fill: rgb(36, 36, 86);
 }
 
+nav a {
+    color: rgb(96, 96, 134);
+    text-decoration: none;
+    text-underline-offset: 0.7rem;
+}
+
+nav a:hover,
+nav a:focus {
+    color: rgb(36, 36, 86);
+    text-decoration: underline;
+}
+
 .menuIcon {
 
-    border: 0.1em solid rgb(67, 64, 80);
+    border: 0.1em solid rgb(96, 96, 134);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -269,16 +313,16 @@ footer {
 .menuBar {
     width: 2.3em;
     height: 0.5em;
-    background-color: rgb(67, 64, 80);
+    background-color: rgb(96, 96, 134);
     border-radius: 1em;
 }
 
 .menuIcon:hover .menuBar {
-    background-color: aliceblue;
+    background-color: rgb(36, 36, 86);
 }
 
 .menuIcon:hover {
-    border: 0.1em solid aliceblue;
+    border: 0.1em solid rgb(36, 36, 86);
 }
 
 nav ul {
@@ -635,7 +679,7 @@ section {
 
     .menuIcon {
         background-color: rgb(67, 64, 80);
-        border: 0.1em solid rgb(183, 193, 202);
+        border: 0.1em solid rgb(182, 201, 218);
     }
 
     .menuBar {
@@ -648,6 +692,22 @@ section {
 
     .menuIcon:hover {
         border: 0.1em solid aliceblue;
+    }
+
+    .popup-close-icon {
+        border: 1px solid rgb(182, 201, 218);
+    }
+
+    .popup-close-icon:hover {
+        border: 1px solid aliceblue;
+    }
+
+    .close-icon-svg {
+        stroke: rgb(182, 201, 218);
+    }
+
+    .close-icon-svg:hover {
+        stroke: aliceblue;
     }
 
     .christoffer-gylin-logo {

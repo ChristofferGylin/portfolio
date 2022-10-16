@@ -4,10 +4,11 @@ import { clickCard } from './clickCard.js';
 document.getElementById('menuIcon').addEventListener('click', () => {
 
     document.getElementById('navMobile').classList.toggle('menu-hidden');
-    
+
 });
 
 document.getElementById('blackoutCover').addEventListener('click', backToNormal);
+document.getElementById('closeIconSvg').addEventListener('click', backToNormal);
 
 const cards = document.getElementsByClassName('card');
 
