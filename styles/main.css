@@ -736,7 +736,8 @@ section {
         fill: aliceblue;
     }
 
-    nav a {
+    nav a,
+    nav a:visited {
         color: rgb(182, 201, 218);
     }
 
@@ -754,7 +755,8 @@ section {
     }
 
 
-    .currentPageListItem a {
+    .currentPageListItem a,
+    .currentPageListItem a:visited {
         color: aliceblue;
     }
 
