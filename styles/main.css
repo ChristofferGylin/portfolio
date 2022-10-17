@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     letter-spacing: 0.1rem;
-    color: rgb(36, 36, 86);
+
 }
 
 html {
@@ -185,8 +185,8 @@ li ul {
 
 
 
-a {
-    text-decoration: none;
+a:link {
+    color: blue;
 }
 
 header {
@@ -640,9 +640,15 @@ section {
 
 @media (prefers-color-scheme: dark) {
 
-    * {
-        color: aliceblue;
+    a:link {
+        color: rgb(0, 102, 255)
     }
+
+    a:visited {
+        color: rgb(185, 71, 185)
+    }
+
+
 
     h1 {
 
