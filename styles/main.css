@@ -91,12 +91,12 @@ li ul {
     transform: translate(-50%, -50%);
     top: 50vh;
     left: 50vw;
-    width: 80vw;
+    width: 60vw;
     height: 80vh;
     overflow: auto;
     display: grid;
     gap: 2rem;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 2rem auto auto;
     padding: 2rem;
     visibility: hidden;
     z-index: 1;
