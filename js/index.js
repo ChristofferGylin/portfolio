@@ -1,4 +1,5 @@
 import { backToNormal } from './backToNormal.js';
+import { backToPopup } from './backToPopup.js';
 import { clickCard } from './clickCard.js';
 
 document.getElementById('menuIcon').addEventListener('click', () => {
@@ -8,7 +9,9 @@ document.getElementById('menuIcon').addEventListener('click', () => {
 });
 
 document.getElementById('blackoutCover').addEventListener('click', backToNormal);
+document.getElementById('blackoutCoverScreenshot').addEventListener('click', backToPopup);
 document.getElementById('closeIconSvg').addEventListener('click', backToNormal);
+
 
 const cards = document.getElementsByClassName('card');
 

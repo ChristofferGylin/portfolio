@@ -63,6 +63,10 @@ li ul {
     margin-top: 1rem;
 }
 
+main {
+    margin-bottom: 10rem;
+}
+
 .form-field {
     color: rgb(27, 27, 32);
     padding: 0.5rem;
@@ -72,7 +76,7 @@ li ul {
     font-weight: bold;
 }
 
-#blackoutCover {
+.blackout-cover {
     background-color: rgba(0, 0, 0, 0.164);
     backdrop-filter: blur(3px);
     width: 100vw;
@@ -81,6 +85,36 @@ li ul {
     top: 0;
     left: 0;
     visibility: hidden;
+}
+
+#blackoutCover {
+    z-index: 1;
+}
+
+#blackoutCoverScreenshot {
+    z-index: 2;
+}
+
+.screenshot-container {
+    display: grid;
+    grid-template-rows: 2rem auto;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50vh;
+    left: 50vw;
+    visibility: hidden;
+    z-index: 3;
+}
+
+.screenshot-container img {
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+#closeIconSvgScreenshot {
+    align-self: end;
 }
 
 .popup {
@@ -99,7 +133,7 @@ li ul {
     grid-template-rows: 2rem auto auto;
     padding: 2rem;
     visibility: hidden;
-    z-index: 1;
+    z-index: 2;
 }
 
 .popup-text {
@@ -164,6 +198,20 @@ li ul {
     position: relative;
     bottom: 1rem;
     left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgb(96, 96, 134);
+    border-radius: 0.3rem;
+}
+
+.popup-close-icon-screenshot {
+    background-color: rgba(221, 231, 241, 0.847);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -3rem;
+    left: -1rem;
     width: 2rem;
     height: 2rem;
     border: 1px solid rgb(96, 96, 134);
@@ -717,6 +765,10 @@ section {
 
     .close-icon-svg:hover {
         stroke: aliceblue;
+    }
+
+    .popup-close-icon-screenshot {
+        background-color: rgba(56, 55, 63, 0.847);
     }
 
     .christoffer-gylin-logo {

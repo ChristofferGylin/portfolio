@@ -1,8 +1,9 @@
 import { grooveboxInfo } from "../infoTexts/grooveboxInfo.js";
 import { ekholmsnasInfo } from '../infoTexts/ekholmsnasInfo.js';
 import { tinyGrandInfo } from "../infoTexts/tinyGrandInfo.js";
+import { clickScreenshot } from "./clickScreenshot.js";
 
-export const clickCard = (e, portfolioPage) => {
+export const clickCard = (e) => {
 
     e.target.style.transform = 'none';
     document.getElementById('popup').style.visibility = 'visible';
@@ -49,15 +50,21 @@ export const clickCard = (e, portfolioPage) => {
 
     let screenshots = ``;
 
-    info.screenshots.forEach(screenshot => {
-        let extraPunctuation = ``;
-        if (portfolioPage) {
-            extraPunctuation = `.`;
-        }
-        const item = `<div class="popup-screenshot-thumb" style="background-image: url(${extraPunctuation}${screenshot.thumb})"></div>`;
+    for (let i = 0; i < info.screenshots.length; i++) {
+
+        const item = `<div class="popup-screenshot-thumb" id="popupScreenshotThumb${i}" style="background-image: url(${info.screenshots[i].thumb})"></div>`;
         screenshots += item;
-    });
+
+    }
 
     document.getElementById('popupScreenshots').innerHTML = screenshots;
+
+    for (let i = 0; i < info.screenshots.length; i++) {
+
+        document.getElementById(`popupScreenshotThumb${i}`).addEventListener('click', () => {
+            clickScreenshot(info.screenshots[i].large);
+        })
+
+    }
 
 }

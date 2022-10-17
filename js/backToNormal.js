@@ -2,6 +2,7 @@ export const backToNormal = () => {
 
     document.getElementById('popup').style.visibility = 'hidden';
     document.getElementById('blackoutCover').style.visibility = 'hidden';
+    document.getElementById('screenshotContainer').style.visibility = 'hidden';
 
     const cards = document.getElementsByClassName('card');
 
