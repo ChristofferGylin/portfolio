@@ -8,6 +8,7 @@ document.getElementById('menuIcon').addEventListener('click', () => {
 });
 
 document.getElementById('blackoutCover').addEventListener('click', backToNormal);
+document.getElementById('closeIconSvg').addEventListener('click', backToNormal);
 
 const cards = document.getElementsByClassName('card');
 

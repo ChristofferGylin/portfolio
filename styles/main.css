@@ -15,6 +15,7 @@ body {
     color: rgb(27, 27, 32);
     margin: 0;
     padding: 0;
+
 }
 
 h1,
@@ -90,8 +91,8 @@ li ul {
     transform: translate(-50%, -50%);
     top: 50vh;
     left: 50vw;
-    width: 60vw;
-    height: 60vh;
+    width: 80vw;
+    height: 80vh;
     overflow: auto;
     display: grid;
     gap: 2rem;
@@ -204,6 +205,8 @@ header {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
     background-color: rgba(221, 231, 241, 0.847);
     backdrop-filter: blur(5px);
     border-top: 0.1rem solid rgb(183, 193, 202);
