@@ -11,9 +11,10 @@ html {
 }
 
 body {
+
     background-color: aliceblue;
     color: rgb(27, 27, 32);
-    margin: 0;
+    margin: auto;
     padding: 0;
 
 }
@@ -65,6 +66,8 @@ li ul {
 }
 
 main {
+    width: 80%;
+    margin: auto;
     margin-bottom: 10rem;
 }
 
@@ -239,6 +242,7 @@ a:link {
 }
 
 header {
+
     background-color: rgba(221, 231, 241, 0.847);
     backdrop-filter: blur(5px);
     border-bottom: 0.1rem solid rgb(183, 193, 202);
@@ -254,8 +258,7 @@ header {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+    position: static;
     background-color: rgba(221, 231, 241, 0.847);
     backdrop-filter: blur(5px);
     border-top: 0.1rem solid rgb(183, 193, 202);
@@ -329,7 +332,7 @@ footer {
 }
 
 .christoffer-gylin-logo {
-    height: 3.5rem;
+    height: 2.5rem;
     margin-left: 2rem;
     stroke: rgb(36, 36, 86);
     fill: rgb(36, 36, 86);
@@ -354,17 +357,17 @@ nav a:focus {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 3.5em;
-    height: 3.5em;
-    padding: 0.3em;
-    margin: 0.3em;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.2em;
+    margin: 0.2em;
     border-radius: 0.5em;
 
 }
 
 .menuBar {
-    width: 2.3em;
-    height: 0.5em;
+    width: 1.8em;
+    height: 0.3em;
     background-color: rgb(96, 96, 134);
     border-radius: 1em;
 }
@@ -442,7 +445,9 @@ section {
     justify-content: space-around;
     width: 100%;
     flex-direction: column;
+    margin: auto;
     margin-bottom: 2rem;
+
 
 }
 
@@ -578,6 +583,10 @@ section {
 
 @media screen and (min-width: 768px) {
 
+    main {
+        width: 100%;
+    }
+
     .button,
     #formSubmit {
         display: inline-block;
@@ -598,6 +607,7 @@ section {
     }
 
     .card-box {
+        width: 100%;
         flex-direction: row;
     }
 
@@ -626,6 +636,16 @@ section {
         width: 80%;
         max-width: 960px;
         margin: 3rem auto 6rem auto;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .christoffer-gylin-logo {
+        height: 3.5rem;
+        margin-left: 2rem;
     }
 
     .popup-sidebar {
@@ -694,7 +714,25 @@ section {
         padding-right: 2rem;
     }
 
-    .cv-skills {}
+
+    .menuIcon {
+
+
+        width: 3.5em;
+        height: 3.5em;
+        padding: 0.3em;
+        margin: 0.3em;
+        border-radius: 0.5em;
+
+    }
+
+    .menuBar {
+        width: 2.3em;
+        height: 0.5em;
+        background-color: rgb(96, 96, 134);
+        border-radius: 1em;
+    }
+
 
 }
 
@@ -847,9 +885,7 @@ section {
 
     .nav-mobile {
 
-
         background-color: rgba(56, 55, 63, 0.847);
-        ;
 
     }
 
