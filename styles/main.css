@@ -835,6 +835,7 @@ section {
     }
 
     nav a,
+    nav a:link,
     nav a:visited {
         color: rgb(182, 201, 218);
     }
