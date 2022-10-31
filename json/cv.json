@@ -1,0 +1,44 @@
+{
+    "employment": [
+        {
+            "heading": "2007-2015 - Giertta Gylin Events",
+            "jobTitle": "VD, Eventansvarig, DJ",
+            "location": "Stockholm",
+            "text": "Arbetsuppgifter bestod,  förutom driften av själva företaget, i att arrangera bröllop,  fester och andra event, samt att arbeta som DJ."
+        },
+        {
+            "heading": "2001-2013 - Gylin Design",
+            "jobTitle": "VD, Webbdesigner, it-supporttekniker",
+            "location": "Stockholm",
+            "text": "Jag startade mitt första företag Gylin Design när jag var 17 och fortfarande gick i gymnasiet. Till en början var mina uppgifter, förutom att administrera, marknadsföra, bokföra och göra allt annat som hör ett företag till, att designa hemsidor till mindre företag. Med tiden gick verksamheten över till IT-support hos för privatpersoner och småföretag."
+        },
+        {
+            "heading": "2001-2004 - S-Post",
+            "jobTitle": "Telefonist/Telekollare, administratör och databashanterare",
+            "location": "Ulvsunda, Stockholm",
+            "text": "S-Post är ett företag som distribuerar lokaltidningar och direktreklam och jag började min anställning som telekollare. Min arbetsuppgift var då att ringa upp personer för att undersöka om de fått sin lokaltidning med tillhörande direktreklam, men gick senare vidare till att administrera databaserna med telefonlistor."
+        },
+        {
+            "heading": "2001-2001 - Sportguiden",
+            "jobTitle": "Eventansvarig och spelrecensent",
+            "location": "Stockholm",
+            "text": "Tjänsten innefattade förutom att recensera TV-spel åt tidningen att medverka som arrangör eller verka som Sportguidens representant vid olika sportrelaterade event."
+        }
+    ],
+    "education": [
+        "2022 - Pågående YH-utbildning Frontend för Mobil och Web vid Chas Academy",
+        "2020 - Slutfört gymnasial vuxenutbildning Digitalt Skapande 1 vid NTI Skola",
+        "2020 - Slutfört gymnasial vuxenutbildning Programmering 1 vid NTI Skolan",
+        "2002 - Slutfört gymnasieprogram El Elektronik/Data vid Sjödalsgymnasiet i Huddinge"
+    ],
+    "internships": [
+        {
+            "companyName": "Sekvencia AB",
+            "text": "Praktiserade som datortekniker på #companyName# under gymnasietiden."
+        },
+        {
+            "companyName": "Databolaget Roland Thorberg AB",
+            "text": "Praktiserade som datortekniker på #companyName# under gymnasietiden"
+        }
+    ]
+}
