@@ -1,8 +1,12 @@
+import { languagePercentages } from './githubAPICalls.js';
+
 document.getElementById('menuIcon').addEventListener('click', () => {
 
     document.getElementById('navMobile').classList.toggle('menu-hidden');
 
 });
+
+languagePercentages();
 
 const getInfo = async () => {
 
