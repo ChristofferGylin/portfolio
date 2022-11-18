@@ -25,7 +25,6 @@ export const clickCard = (e) => {
             info = tinyGrandInfo;
             break;
 
-
     }
     document.getElementById('popupTitle').innerHTML = info.title;
     document.getElementById('popupText').innerHTML = info.text;

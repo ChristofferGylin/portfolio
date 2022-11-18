@@ -512,6 +512,10 @@ section,
     background-image: url('../img/TinyGrandPrixGameshot2Small.png');
 }
 
+#memplusplusThumb {
+    background-image: url('../img/memplusplus-screenshot.jpg');
+}
+
 .button,
 #formSubmit {
     display: block;
