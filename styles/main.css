@@ -466,6 +466,10 @@ section,
 
 }
 
+
+
+
+
 .card {
     display: flex;
     justify-content: start;
@@ -483,8 +487,8 @@ section,
     overflow: hidden;
 }
 
-.card:first-child {
-    margin-left: 0;
+.card-box-portfolio .card {
+    width: 100%;
 }
 
 .card-banner {
@@ -644,9 +648,22 @@ section,
         flex-direction: row;
     }
 
+    .card-box-portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3rem;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+
+    }
+
+
     .card {
         width: 40%;
-        margin: 0 2rem;
+        margin: 0 2rem 0 0;
+        transition: all 0.2s ease-in-out;
     }
 
     .card:hover {
