@@ -3,6 +3,7 @@ import { ekholmsnasInfo } from '../infoTexts/ekholmsnasInfo.js';
 import { tinyGrandInfo } from "../infoTexts/tinyGrandInfo.js";
 import { memplusplusInfo } from "../infoTexts/memplusplus.js";
 import { clickScreenshot } from "./clickScreenshot.js";
+import { plinkPlonkInfo } from "../infoTexts/plinkPlonkInfo.js";
 
 export const clickCard = (e) => {
 
@@ -28,6 +29,10 @@ export const clickCard = (e) => {
 
         case 'memplusplusThumb':
             info = memplusplusInfo;
+            break;
+
+        case 'plinkplonkThumb':
+            info = plinkPlonkInfo;
             break;
 
 

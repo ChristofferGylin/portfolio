@@ -33,6 +33,10 @@
     ],
     "internships": [
         {
+            "companyName": "Reason Studios AB",
+            "text": "Praktiserar för tillfället som fullstackutvecklare på #companyName# som en del av min pågående YH-utbildning."
+        },
+        {
             "companyName": "Sekvencia AB",
             "text": "Praktiserade som datortekniker på #companyName# under gymnasietiden."
         },

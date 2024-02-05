@@ -1,6 +1,7 @@
 import { grooveboxInfo } from "../infoTexts/grooveboxInfo.js";
 import { ekholmsnasInfo } from '../infoTexts/ekholmsnasInfo.js';
 import { tinyGrandInfo } from "../infoTexts/tinyGrandInfo.js";
+import { plinkPlonkInfo } from "../infoTexts/plinkPlonkInfo.js";
 import { clickScreenshot } from "./clickScreenshot.js";
 
 export const clickCard = (e) => {
@@ -23,6 +24,10 @@ export const clickCard = (e) => {
 
         case 'tinyGrandPrixThumb':
             info = tinyGrandInfo;
+            break;
+
+        case 'plinkplonkThumb':
+            info = plinkPlonkInfo;
             break;
 
     }

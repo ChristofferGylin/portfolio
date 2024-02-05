@@ -520,6 +520,10 @@ section,
     background-image: url('../img/memplusplus-screenshot2Small.png');
 }
 
+#plinkplonkThumb {
+    background-image: url('../img/plinkplonk1Small.png');
+}
+
 .button,
 #formSubmit {
     display: block;
